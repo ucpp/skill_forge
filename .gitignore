@@ -1,0 +1,25 @@
+# VSCode
+.vscode/
+
+# Build artifacts
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+
+# Build dirs
+build/
+bin/
+Debug/
+Release/
+
+# Temp / system
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
