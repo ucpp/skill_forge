@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
+#include "leetcode_utils.h"
 
 class Solution
 {
@@ -29,27 +30,6 @@ public:
         return result;
     }
 };
-
-template<typename T>
-std::ostream& operator<<(std::ostream& os, const std::vector<T>& v)
-{
-    os << "{";
-
-    auto it = v.begin();
-    auto end = v.end();
-
-    if (it != end)
-    {
-        os << *it;
-        while (++it != end)
-        {
-            os << ", " << *it;
-        }
-    }
-
-    os << "}";
-    return os;
-}
 
 void runTest(const std::vector<int>& input, const std::vector<int>& expected, const std::string& testName)
 {

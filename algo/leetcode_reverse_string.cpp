@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 #include <utility>
+#include "leetcode_utils.h"
 
 class Solution
 {
@@ -19,27 +20,6 @@ public:
         }
     }
 };
-
-template<typename T>
-std::ostream& operator<<(std::ostream& os, const std::vector<T>& v)
-{
-    os << "{";
-
-    auto it = v.begin();
-    auto end = v.end();
-
-    if (it != end)
-    {
-        os << *it;
-        while (++it != end)
-        {
-            os << ", " << *it;
-        }
-    }
-
-    os << "}";
-    return os;
-}
 
 void runTest(const std::vector<char>& input, const std::vector<char>& expected, const std::string& testName)
 {
